@@ -3,7 +3,7 @@ exports.handler = (event, context, callback) => {
 
   var raw_json=JSON.stringify(event);
   var searchMask = '"host"';
-  var regEx = new RegExp(searchMask, "ig");  /* Case insensitive search */ 
+  var regEx = new RegExp(searchMask, "ig");  
   var replaceMask = '"Host"';
   raw_json = raw_json.replace(regEx, replaceMask);
   event=JSON.parse(raw_json);
