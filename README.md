@@ -1,4 +1,4 @@
-# Redirect www to non www URL using cloudfront and lambda@edge using Cloudfront
+# Redirect www to non www URL using cloudfront and lambda@edge
 
 1. Create an empty aws S3 bucket.
 1. Create the lambda function in us-east-1 since it will be used for cloudfront using redirecturl.js.
